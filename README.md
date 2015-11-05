@@ -18,7 +18,7 @@ For JIRA test you can do following. The first thing is to create [Backdoor clien
 backdoor = new Backdoor(new TestKitLocalEnvironmentData());
 ```
 
-In case you extended BaseJiraWebTest for your test you already have access to `backdoor` class from it. Once you have backdoor, just call:
+In case you extended `BaseJiraWebTest` for your test you already have access to `backdoor` class from it. Once you have backdoor, just call:
 
 ```
 backdoor.plugins().setPluginLicense("key-of-your-plugin", TIMEBOMB_LICENSE_FOR_TESTING);
